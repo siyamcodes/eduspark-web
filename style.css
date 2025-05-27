@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+/* here are some created color variant, which are used all the website */
+:root {
+    --primary-color: #639ef1;
+    --accent-color: #1b4da3;
+    --text-color: #333333;
+    --link-color: #3269e0;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0e8;
+    --gray: #546072;
+    --dark-gray: #534c4c;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Inter',sans-serif;
+    text-decoration:none;
+}
+body{
+    height:100vh;
+    text-align:center;
+    background-color: var(--background-color);
+    padding:0.4rem;
+}
+ /* Header content styling */
+.header-content{
+    max-width:920px;
+    display:flex;
+    justify-content:space-between;
+    margin:0 auto;
+    align-items:center;
+    padding:1rem;
+    
+}
+.logo{
+    display:flex;
+    font-size:1.7rem;
+    align-items:center;
+    font-weight:bold;
+    text-decoration:none;
+    gap:0.3rem;
+}
+
+.logo-icon{
+    height:37px;
+    width:32px;
+}
+
+.logo-text{
+    font-size:2rem;
+    text-decoration:none;
+    color:var(--text-color);
+}
+
+.navbar{
+    display:flex;
+    gap:1.5rem;
+}
+
+.nav-link{
+    color:var(--gray);
+    font-size:1.025rem;
+    transform:color 0.135s;
+    font-weight:450;
+}
+
+.nav-link:hover{
+    color:var(--link-color);
+}
+
+.contact-button{
+    color:var(--background-color);
+    background-color: var(--accent-color);
+    border:none;
+    border-radius:0.475rem;
+    padding:0.57rem 1.5rem;
+    transform:all 0.152s;
+    font-size:0.9rem;
+    font-weight:450;
+}
+.contact-button:hover{
+    background-color: #245fc4;
+}
