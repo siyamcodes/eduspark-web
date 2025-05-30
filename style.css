@@ -130,6 +130,7 @@ body{
 .content{
     padding:2rem 0;
 }
+/* Main section style start */
 .main-section{
     max-width:1020px;
     display:flex;
@@ -142,7 +143,7 @@ body{
 .content-left{
     display:flex;
     flex-direction:column;
-    text-align:center;
+    text-align:left;
     animation:contextshow 0.5s ease forwards;
     opacity:0;
     gap:1rem;
@@ -167,7 +168,7 @@ body{
     color:black;
 }
 .section-description{
-    
+   
     font-size:1rem;
     color:#363b43;
 }
@@ -196,6 +197,11 @@ body{
     background-color: #000080;
     color:#ffffff;
 }
+.start-button:active,.take-tour-button:active{
+    color:var(--background-color);
+    background-color: #FF4081;
+    transform:scale(0.98);
+}
 .content-right{
     display:flex;
     align-items:center;
@@ -206,7 +212,8 @@ body{
     border-radius:1.25rem;
     overflow:hidden;
     box-shadow:0px 4px 8px rgba(0,0,0,0.1);
-    height:53vh;
+    height:56vh;
+    width:50vw;
 }
 .content-image{
     height:100%;
@@ -215,7 +222,7 @@ body{
 @media screen and (min-width:768px) {
     .main-section{
         flex-direction:row;
-        gap:9.5rem;
+        gap:7.5rem;
     }
     .content-left{
         max-width:50%;
@@ -225,5 +232,70 @@ body{
         justify-content:start;
         padding-left:0;
     }
+    .section-label{
+        font-size:1rem;
+        font-weight:700;
+    }
+    .section-title{
+        font-size:2.3rem;
+    }
+    .section-description{
+        text-align:justify;
+        font-size:1.12rem;
+        max-width:90%;
+    }
+    .image-conteiner{
+        height:60vh;
+        width:30vw;
+    }
+}
+.company-conteiner{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+    padding:1rem;
+    /* margin-top:2rem; */
+    animation:contextshow 0.5s ease forwards;
+}
+.company-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:3rem;
+    padding:1.6rem 2rem;
+    background-color:var(--light-gray);
+    border:none;
+    border-radius:0.51rem;
+    margin-top:0.8rem;
+}
+.company-logo{
+    font-size:1rem;
+    font-weight:500;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0.5rem;
+}
+.logo-image{
+    height:1.4rem;
+}
+.company-logo-text{
+    font-size:1rem;
+    color:var(--gray);
 }
 
+@media screen and (min-width:640px) {
+    .company-grid{
+        grid-template-columns:repeat(4,1fr);
+        padding:1.1rem 2rem;
+        border-radius:0.5rem;
+    }
+    .comapany-conteiner-heading{
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+    .company-conteiner{
+        gap:0.8rem;
+    }
+}
